@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBooks Customer Service Recorder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>QuickBooks Customer Service Recorder</h1>
+        <p class="subtitle">Record customer interactions, get summaries and suggested responses</p>
+
+        <div class="controls">
+            <button id="recordBtn">Record</button>
+            <button id="stopBtn" disabled>Stop</button>
+            <button id="processBtn" disabled>Process</button>
+            <span id="status">Ready</span>
+        </div>
+
+        <div class="panel">
+            <h2>Customer Transcript</h2>
+            <textarea id="transcript" placeholder="Click Record to start listening, or type/paste a transcript here..."></textarea>
+        </div>
+
+        <div class="panel" id="resultsPanel" style="display:none;">
+            <h2>Issue Summary</h2>
+            <div id="summary"></div>
+
+            <h2>Suggested Response</h2>
+            <div id="response"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
