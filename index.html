@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickBooks Customer Service Recorder</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>QuickBooks Customer Service Recorder</h1>
         <p class="subtitle">Record customer interactions, get summaries and suggested responses</p>
+
+        <div class="panel api-key-panel">
+            <label for="apiKey">Anthropic API Key</label>
+            <div class="api-key-row">
+                <input type="password" id="apiKey" placeholder="sk-ant-...">
+                <button id="toggleKey" type="button">Show</button>
+                <button id="saveKey" type="button">Save</button>
+            </div>
+            <p class="hint" id="keyStatus"></p>
+        </div>
 
         <div class="controls">
             <button id="recordBtn">Record</button>
@@ -32,6 +42,6 @@
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script src="app.js"></script>
 </body>
 </html>

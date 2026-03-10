@@ -32,6 +32,57 @@ h2 {
     color: #444;
 }
 
+/* API Key Section */
+.api-key-panel {
+    margin-bottom: 1.5rem;
+}
+
+.api-key-panel label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.api-key-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.api-key-row input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.api-key-row input:focus {
+    outline: none;
+    border-color: #2ca01c;
+    box-shadow: 0 0 0 2px rgba(44, 160, 28, 0.2);
+}
+
+.api-key-row button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.api-key-row button:hover {
+    background: #eee;
+}
+
+.hint {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Controls */
 .controls {
     margin-bottom: 1.5rem;
     display: flex;
@@ -75,6 +126,7 @@ button:disabled {
     color: #666;
 }
 
+/* Panels */
 .panel {
     background: white;
     border-radius: 8px;
